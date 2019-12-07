@@ -2,9 +2,9 @@ import axios from 'axios'
 
 export function request(config) {
   const instance = axios.create({
-    baseURL:'http://api.k780.com',
-    timeout:5000,
-  })
+    baseURL:'http://123.207.32.32:8000/api/v1',
+    timeout:5000
+  });
 
   instance.interceptors.request.use(config =>{
     return config
@@ -17,7 +17,14 @@ export function request(config) {
     return res.data
   },err =>{
     console.log(err);
-  })
+  });
 
   return instance(config)
+}
+
+export function requestOther() {
+  const instanceOther = axios.create({
+    baseURL:'http://api.k780.com',
+    timeout:5000,
+  })
 }
