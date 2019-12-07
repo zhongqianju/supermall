@@ -19,6 +19,7 @@
     "@vue/cli-plugin-vuex": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
     "components": "^0.1.0",
+    "network": "^0.4.1",
     "views": "^1.0.2",
     "vue-template-compiler": "^2.6.10"
   },
